@@ -43,13 +43,13 @@ fi
 
 if [ -z "$TMUX_POWERLINE_LEFT_STATUS_SEGMENTS" ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"pane_status 148 234"
-		"vcs_branch 29 88"
+		"pane_status 202 235"
+		"vcs_branch 214 235"
 	)
 fi
 
 if [ -z "$TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS" ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-		"pwd 89 211"
+		"pwd 235 202"
 	)
 fi
