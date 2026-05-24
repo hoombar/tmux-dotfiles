@@ -13,6 +13,9 @@ when a pane is zoomed.
 - `shell/tmux-auto-attach.bash` - optional shell login snippet.
 - `install.sh` - installs files and bootstraps TPM.
 
+New panes use `/usr/bin/zsh` by default. If zsh is installed somewhere else on a
+machine, update `set-option -g default-shell` in `tmux.conf` after installing.
+
 ## Install
 
 ```bash
@@ -36,6 +39,12 @@ source "$HOME/.config/tmux-auto-attach.bash"
 The auto-attach snippet intentionally attaches to any existing session first.
 That avoids creating a new `main` session when the active session has another
 name, such as `0`.
+
+For zsh users, source the same snippet from `~/.zshrc` after prompt setup:
+
+```zsh
+source "$HOME/.config/tmux-auto-attach.bash"
+```
 
 ## Pane Status
 
